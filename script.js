@@ -15,3 +15,22 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+
+// below for the navbar
+$(document).ready(function () {
+    // Collapse navbar when link is clicked
+    $('.navbar-nav a').on('click', function(){
+        $('.navbar-collapse').collapse('hide');
+    });
+
+    // Collapse navbar when clicking outside of it
+    $(document).click(function (event) {
+        var clickover = $(event.target);
+        var $navbar = $(".navbar-collapse");
+        var _opened = $navbar.hasClass("show");
+        if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+            $navbar.collapse('hide');
+        }
+    });
+});

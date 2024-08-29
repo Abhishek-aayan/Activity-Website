@@ -60,6 +60,9 @@ body {
     font-size: 1.2rem;
     text-align: left;
 }
+.hero-section img {
+    margin-top: 8%;
+}
 
 /* Section Styles */
 section {
@@ -83,8 +86,13 @@ section p {
 /* #about {
     background-color: #e9f7ef;
 } */
-
+#about>div>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 #about p {
+    padding: 0 4%;
     text-align: left;
     margin-bottom: 0;
 }
@@ -200,13 +208,28 @@ section p {
 } */
 
 /* Mobile Application Section */
-#download img {
+/* #download img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+} */
+#download>div>div>div>img {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
 }
-
+#download>div>div>img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+#download>div>div>div>div>a>img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
 #download .btn {
+    padding: 0 5%;
     margin: 5px;
 }
 #application-sec{
@@ -237,6 +260,9 @@ section p {
 }
 
 /* Contact Section */
+#contact>div>div {
+    display: flex;
+}
 #contact .form-control {
     border-radius: 0;
     box-shadow: none;
@@ -258,6 +284,11 @@ section p {
 }
 
 /* Footer Styles */
+footer>section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 footer {
     background-color:#B5F48E66;
     color: #000000;
@@ -266,6 +297,12 @@ footer {
 footer p {
     margin: 0;
     font-size: 0.9rem;
+}
+.footer-links{
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 /* below for updated carousel */
 .banner {
@@ -415,7 +452,19 @@ footer p {
     .hero-section p {
         font-size: 1rem;
     }
-
+    #about>div>div{
+        display: grid;
+    }
+    #about p {
+        padding: 5% 1%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    #about img {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+    }
     .navbar .nav-link {
         font-size: 0.9rem;
     }
@@ -434,8 +483,9 @@ footer p {
 
     .capsule-activity img,
     .capsule-box img {
-        width: 50%;
+        width: 100%;
         margin-bottom: 15px;
+        border-radius: 100px;
     }
 
     .content h3 {
@@ -460,9 +510,44 @@ footer p {
     }
 
     #download .btn {
-        font-size: 1rem;
+        font-size: .8rem;
         padding: 8px 16px;
     }
+    #download>div>div>div>img {
+        max-width: 70%;
+        height: auto;
+        margin-bottom: 20px;
+        margin-left: 5%;
+    }
+    #download>div>div>img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    #download>div>div>div>div>a>img {
+        width: 80px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    #contact>div>div {
+        display: grid;
+    }
+    #contact>div>div>form {
+        margin-top: 4%;
+    }
+    .footer-links{
+        padding: 0 2%;
+        display: grid;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer-links>div a>h6{
+       font-size: .8rem;
+    }
+    .footer-links>p{
+        font-size: .8rem;
+     }
+    
 }
 
 /* Styles for Tablets */
@@ -481,7 +566,19 @@ footer p {
     .hero-section p {
         font-size: 1.1rem;
     }
-
+    #about>div>div{
+        display: grid;
+    }
+    #about p {
+        padding: 5% 1%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    #about img {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+    }
     .navbar .nav-link {
         font-size: 1rem;
     }
@@ -528,6 +625,28 @@ footer p {
     #download .btn {
         font-size: 1.1rem;
         padding: 10px 20px;
+    }
+    #download>div>div>div>img {
+        max-width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+        margin-left: 5%;
+    }
+    #download>div>div>img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    #download>div>div>div>div>a>img {
+        width: 100px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    #contact>div>div {
+        display: grid;
+    }
+    #contact>div>div>form {
+        margin-top: 5%;
     }
 }
 
@@ -587,4 +706,16 @@ footer p {
         font-size: 1.2rem;
         padding: 12px 24px;
     }
+    .footer-links{
+        padding: 0 2%;
+        display: grid;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer-links>div a>h6{
+       font-size: .8rem;
+    }
+    .footer-links>p{
+        font-size: .8rem;
+     }
 }
